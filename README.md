@@ -7,7 +7,7 @@
 
 #使用方法
 ```python
-webhook = "https://oapi.dingtalk.com/robot/send?access_token=your_token
+webhook = "https://oapi.dingtalk.com/robot/send?access_token=your_token"
 robot = DtalkRobot(webhook)
 robot.sendMarkdown("消息title", "Markdown格式的内容")
 ```
