@@ -58,7 +58,7 @@ class DtalkRobot(object):
 	def post(self, data):
 		post_data = json.JSONEncoder().encode(data)
  		print post_data
-		req = urllib2.Request(webhook, post_data)
+		req = urllib2.Request(self.webhook, post_data)
  		req.add_header('Content-Type', 'application/json')
 		content = urllib2.urlopen(req).read()
 		return content
